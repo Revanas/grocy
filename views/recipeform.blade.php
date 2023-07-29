@@ -78,6 +78,22 @@
 				</div>
 			</div>
 
+			<div class="form-group">
+				<div class="custom-control custom-checkbox">
+					<input @if($mode=='edit'
+						&&
+						$recipe->current_cycle == 1) checked @endif class="form-check-input custom-control-input" type="checkbox" id="current_cycle" name="current_cycle" value="1">
+					<label class="form-check-label custom-control-label"
+						for="current_cycle">
+						{{ $__t('Recipe is part of the current cycle of recipes to be visible in meal plan') }}&nbsp;
+						<i class="fa-solid fa-question-circle text-muted"
+							data-toggle="tooltip"
+							data-trigger="hover click"
+							title="{{ $__t('tbd') }}"></i>
+					</label>
+				</div>
+			</div>
+
 			@include('components.productpicker', array(
 			'products' => $products,
 			'isRequired' => false,
