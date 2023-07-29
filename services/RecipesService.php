@@ -14,6 +14,8 @@ class RecipesService extends BaseService
 
 	const RECIPE_TYPE_NORMAL = 'normal'; // Normal / manually created recipes
 
+	const RECIPE
+
 	public function AddNotFulfilledProductsToShoppingList($recipeId, $excludedProductIds = null)
 	{
 		$recipe = $this->getDataBase()->recipes($recipeId);
