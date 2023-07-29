@@ -98,6 +98,11 @@
 						{{ $__t('Clear done items') }}
 					</a>
 				</div>
+				<a id="round-all-items-up-button"
+					class="btn btn-outline-primary btn-sm mb-1 responsive-button @if(!GROCY_FEATURE_FLAG_STOCK) d-none @endif"
+					href="#">
+					{{ $__t('Add all list items to stock') }}
+				</a>
 				<a id="add-all-items-to-stock-button"
 					class="btn btn-outline-primary btn-sm mb-1 responsive-button @if(!GROCY_FEATURE_FLAG_STOCK) d-none @endif"
 					href="#">
