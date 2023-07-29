@@ -1,0 +1,2 @@
+ALTER TABLE recipes
+ADD current_cycle TINYINT NOT NULL DEFAULT 0;
