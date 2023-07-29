@@ -262,6 +262,9 @@ $(document).on('click', '.shopping-list-stock-add-workflow-list-item-button', fu
 	}
 });
 
+/*
+Diesen Abschnitt zum Testen mal umbauen [shoppinglist_to_stock]
+*/
 Grocy.ShoppingListToStockWorkflowAll = false;
 Grocy.ShoppingListToStockWorkflowCount = 0;
 Grocy.ShoppingListToStockWorkflowCurrent = 0;
