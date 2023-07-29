@@ -288,6 +288,11 @@ if (Grocy.Components.ProductPicker !== undefined)
 						Grocy.Components.ProductAmountPicker.SetQuantityUnit(GetUriParam("quId"));
 						$('#display_amount').val(Number.parseFloat(GetUriParam("amount") * $("#qu_id option:selected").attr("data-qu-factor")));
 					}
+					else if (GetUriParam("flow") === "shoppinglistitemtostockrounded")
+					{
+						Grocy.Components.ProductAmountPicker.SetQuantityUnit(GetUriParam("quId"));
+						$('#display_amount').val(Number.parseFloat(ceil(GetUriParam("amount")) * $("#qu_id option:selected").attr("data-qu-factor")));
+					}
 
 					$(".input-group-productamountpicker").trigger("change");
 
