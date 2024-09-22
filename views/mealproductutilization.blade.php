@@ -2,7 +2,7 @@
 
 @extends('layout.default')
 
-@section('title', $__t('Meal plan'))
+@section('title', $__t('Meal prodcut utilization'))
 
 @push('pageStyles')
 <style>
