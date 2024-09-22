@@ -202,6 +202,17 @@
 						<span class="nav-link-text">{{ $__t('Meal plan') }}</span>
 					</a>
 				</li>
+				<li class="nav-item nav-item-sidebar permission-RECIPES_MEALPLAN @if($viewName == 'mealproductutilization') active-page @endif"
+					data-toggle="tooltip"
+					data-placement="right"
+					title="{{ $__t('Meal Product Utilization') }}">
+					<a id=mealproductutilization-nav-link"
+						class="nav-link discrete-link"
+						href="{{ $U('/mealproductutilization') }}">
+						<i class="fa-solid fa-fw fa-paper-plane"></i>
+						<span class="nav-link-text">{{ $__t('Meal Product Utilization') }}</span>
+					</a>
+				</li>
 				@endif
 				@endif
 				@if(GROCY_FEATURE_FLAG_CHORES)
